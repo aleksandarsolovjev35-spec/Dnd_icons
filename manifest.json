@@ -44,6 +44,20 @@
     },
     {
       "style": "painted",
+      "id": "06",
+      "d100": 6,
+      "slug": "glass-chess-piece",
+      "ru": "Старая стеклянная шахматная фигура",
+      "en": "An old chess piece made from glass",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
       "id": "13",
       "d100": 13,
       "slug": "beast-tooth",
@@ -58,11 +72,67 @@
     },
     {
       "style": "painted",
+      "id": "14",
+      "d100": 14,
+      "slug": "dragon-scale",
+      "ru": "Огромная чешуйка, возможно драконья",
+      "en": "An enormous scale, perhaps from a dragon",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
+      "id": "15",
+      "d100": 15,
+      "slug": "green-feather",
+      "ru": "Ярко-зелёное перо",
+      "en": "A bright green feather",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
       "id": "17",
       "d100": 17,
       "slug": "smoke-orb",
       "ru": "Стеклянный шар с движущимся дымом",
       "en": "A glass orb filled with moving smoke",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
+      "id": "23",
+      "d100": 23,
+      "slug": "rune-etched-brass-orb",
+      "ru": "Латунная сфера с рунами",
+      "en": "A brass orb etched with strange runes",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
+      "id": "43",
+      "d100": 43,
+      "slug": "silver-bell-without-clapper",
+      "ru": "Серебряный колокольчик без язычка",
+      "en": "A tiny silver bell without a clapper",
       "bg": [
         40,
         50,

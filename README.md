@@ -6,16 +6,25 @@
 
 ## Что внутри
 
-### 1. Коллекция «Ручная живопись» — 6 безделушек в одном стиле
+### 1. Коллекция «Ручная живопись» — 11 безделушек в одном стиле
 
 ```
-icons/painted/01-mummified-goblin-hand.png     d100 01  Мумифицированная рука гоблина
-icons/painted/02-moonlight-crystal.png         d100 02  Кристалл, светящийся в лунном свете
-icons/painted/07-skull-knucklebones.png        d100 07  Кости-«шестёрки» с черепом вместо шестёрки
-icons/painted/13-beast-tooth.png               d100 13  Зуб неизвестного зверя
-icons/painted/17-smoke-orb.png                 d100 17  Стеклянный шар с движущимся дымом
-icons/painted/44-gnomish-canary-lamp.png       d100 44  Механическая канарейка в гномьем фонаре
+icons/painted/01-mummified-goblin-hand.png       d100 01  Мумифицированная рука гоблина
+icons/painted/02-moonlight-crystal.png           d100 02  Кристалл, светящийся в лунном свете
+icons/painted/06-glass-chess-piece.png           d100 06  Старая стеклянная шахматная фигура
+icons/painted/07-skull-knucklebones.png          d100 07  Кости-«шестёрки» с черепом вместо шестёрки
+icons/painted/13-beast-tooth.png                 d100 13  Зуб неизвестного зверя
+icons/painted/14-dragon-scale.png                d100 14  Огромная чешуйка, возможно драконья
+icons/painted/15-green-feather.png               d100 15  Ярко-зелёное перо
+icons/painted/17-smoke-orb.png                   d100 17  Стеклянный шар с движущимся дымом
+icons/painted/23-rune-etched-brass-orb.png       d100 23  Латунная сфера с рунами
+icons/painted/43-silver-bell-without-clapper.png d100 43  Серебряный колокольчик без язычка
+icons/painted/44-gnomish-canary-lamp.png         d100 44  Механическая канарейка в гномьем фонаре
 ```
+
+Как добавить ещё: положить мастер-файл 1024×1024 в `masters/painted/<id>-<slug>.png`,
+дописать предмет в `PAINTED_ITEMS` внутри `scripts/build_icons.py` и запустить скрипт —
+иконка, прозрачная версия, превью и галерея обновятся сами.
 
 ### 2. Один предмет в 10 стилях — для выбора стилистики проекта
 
