@@ -1,0 +1,229 @@
+{
+  "collection": [
+    {
+      "style": "painted",
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Мумифицированная рука гоблина",
+      "en": "A mummified goblin hand",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
+      "id": "02",
+      "d100": 2,
+      "slug": "moonlight-crystal",
+      "ru": "Кристалл, светящийся в лунном свете",
+      "en": "A piece of crystal that faintly glows in the moonlight",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
+      "id": "07",
+      "d100": 7,
+      "slug": "skull-knucklebones",
+      "ru": "Кости-«шестёрки» с черепом",
+      "en": "A pair of knucklebone dice with a skull symbol on the six",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
+      "id": "13",
+      "d100": 13,
+      "slug": "beast-tooth",
+      "ru": "Зуб неизвестного зверя",
+      "en": "A tooth from an unknown beast",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
+      "id": "17",
+      "d100": 17,
+      "slug": "smoke-orb",
+      "ru": "Стеклянный шар с движущимся дымом",
+      "en": "A glass orb filled with moving smoke",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "style": "painted",
+      "id": "44",
+      "d100": 44,
+      "slug": "gnomish-canary-lamp",
+      "ru": "Механический канарейка в гномьем фонаре",
+      "en": "A mechanical canary inside a gnomish lamp",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    }
+  ],
+  "styles": [
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Ручная живопись",
+      "en": "Hand-painted",
+      "key": "painted",
+      "mode": "cut",
+      "bg": [
+        40,
+        50,
+        58
+      ],
+      "cutout": true
+    },
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "16-битный пиксель",
+      "en": "16-bit pixel art",
+      "key": "pixel16",
+      "mode": "cut",
+      "bg": [
+        61,
+        49,
+        87
+      ],
+      "cutout": true
+    },
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Плоский вектор",
+      "en": "Flat vector",
+      "key": "vector",
+      "mode": "cut",
+      "bg": [
+        39,
+        43,
+        46
+      ],
+      "cutout": true
+    },
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Фотореализм 3D",
+      "en": "Photoreal 3D",
+      "key": "realism",
+      "mode": "cut",
+      "bg": [
+        32,
+        32,
+        32
+      ],
+      "cutout": true
+    },
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Комикс",
+      "en": "Comic ink",
+      "key": "comic",
+      "mode": "cut",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "cutout": true
+    },
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Акварель",
+      "en": "Watercolour",
+      "key": "watercolor",
+      "mode": "frame",
+      "bg": null,
+      "cutout": false
+    },
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Гравюра",
+      "en": "Engraving",
+      "key": "engraving",
+      "mode": "frame",
+      "bg": null,
+      "cutout": false
+    },
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Low-poly 3D",
+      "en": "Low-poly render",
+      "key": "isometric",
+      "mode": "cut",
+      "bg": [
+        78,
+        93,
+        109
+      ],
+      "cutout": true
+    },
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Витраж",
+      "en": "Stained glass",
+      "key": "stained-glass",
+      "mode": "mosaic",
+      "bg": null,
+      "cutout": false,
+      "mosaic": true
+    },
+    {
+      "id": "01",
+      "d100": 1,
+      "slug": "mummified-goblin-hand",
+      "ru": "Неон/киберпанк",
+      "en": "Neon cyberpunk",
+      "key": "neon",
+      "mode": "cut",
+      "bg": [
+        14,
+        14,
+        19
+      ],
+      "cutout": true
+    }
+  ]
+}
