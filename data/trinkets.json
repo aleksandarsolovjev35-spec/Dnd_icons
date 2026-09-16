@@ -1,4 +1,5 @@
 {
+  "_comment": "Единый источник данных о предметах. Описания — официальные: английский текст из таблицы «Trinkets» (d100) книги Player's Handbook (Wizards of the Coast), русский — из официального перевода «Книга игрока» (Hobby Games, стр. 159). Поле icon_check фиксирует результат сверки картинки с описанием.",
   "source": {
     "en": "D&D 5e Player's Handbook — Trinkets (d100). Wizards of the Coast, 2014.",
     "en_url": "https://media.wizards.com/2015/downloads/dnd/DND_Trinkets_Sample.pdf",
@@ -19,10 +20,6 @@
       "icon_check": {
         "status": "ok",
         "note": "Высохшая рука с когтями и бинтом на запястье. Соответствует: «мумифицированная рука». Лишних предметов нет."
-      },
-      "files": {
-        "icon": "icons/painted/01-mummified-goblin-hand.png",
-        "transparent": "icons/painted/transparent/01-mummified-goblin-hand.png"
       }
     },
     {
@@ -34,10 +31,6 @@
       "icon_check": {
         "status": "fixed",
         "note": "Было: кристаллы на каменной подставке с ореолом свечения. Убрано, потому что в описании только «кусочек кристалла»: теперь один кристальный осколок, лунный свет — блики на гранях, без подставки и без ореола."
-      },
-      "files": {
-        "icon": "icons/painted/02-moonlight-crystal.png",
-        "transparent": "icons/painted/transparent/02-moonlight-crystal.png"
       }
     },
     {
@@ -49,10 +42,6 @@
       "icon_check": {
         "status": "ok",
         "note": "Стеклянный слон с потёртым основанием. Соответствует: шахматная фигура из стекла."
-      },
-      "files": {
-        "icon": "icons/painted/06-glass-chess-piece.png",
-        "transparent": "icons/painted/transparent/06-glass-chess-piece.png"
       }
     },
     {
@@ -64,10 +53,6 @@
       "icon_check": {
         "status": "ok",
         "note": "Две кости: на грани-шестёрке череп, на остальных гранях точки. Соответствует описанию."
-      },
-      "files": {
-        "icon": "icons/painted/07-skull-knucklebones.png",
-        "transparent": "icons/painted/transparent/07-skull-knucklebones.png"
       }
     },
     {
@@ -79,10 +64,6 @@
       "icon_check": {
         "status": "ok",
         "note": "Крупный клык с трещинами и тёмным корнем. Соответствует: зуб неизвестного зверя."
-      },
-      "files": {
-        "icon": "icons/painted/13-beast-tooth.png",
-        "transparent": "icons/painted/transparent/13-beast-tooth.png"
       }
     },
     {
@@ -94,10 +75,6 @@
       "icon_check": {
         "status": "ok",
         "note": "Одна большая чешуйка с наростами и сколотым краем. Соответствует: огромная чешуйка."
-      },
-      "files": {
-        "icon": "icons/painted/14-dragon-scale.png",
-        "transparent": "icons/painted/transparent/14-dragon-scale.png"
       }
     },
     {
@@ -109,10 +86,6 @@
       "icon_check": {
         "status": "ok",
         "note": "Одно ярко-зелёное перо. Соответствует описанию."
-      },
-      "files": {
-        "icon": "icons/painted/15-green-feather.png",
-        "transparent": "icons/painted/transparent/15-green-feather.png"
       }
     },
     {
@@ -124,10 +97,6 @@
       "icon_check": {
         "status": "fixed",
         "note": "Было: сфера на витой латунной подставке. Убрано, потому что в описании только сфера с дымом: теперь стеклянная сфера без подставки и крепления."
-      },
-      "files": {
-        "icon": "icons/painted/17-smoke-orb.png",
-        "transparent": "icons/painted/transparent/17-smoke-orb.png"
       }
     },
     {
@@ -139,10 +108,6 @@
       "icon_check": {
         "status": "fixed",
         "note": "Было: сфера с подвесным кольцом сверху. Убрано, потому что в описании только сфера с рунами: теперь латунный шар без кольца, крепления и подставки."
-      },
-      "files": {
-        "icon": "icons/painted/23-rune-etched-brass-orb.png",
-        "transparent": "icons/painted/transparent/23-rune-etched-brass-orb.png"
       }
     },
     {
@@ -154,10 +119,6 @@
       "icon_check": {
         "status": "ok",
         "note": "Серебряный колокольчик наклонён, видно пустую внутренность — язычка нет. Соответствует описанию."
-      },
-      "files": {
-        "icon": "icons/painted/43-silver-bell-without-clapper.png",
-        "transparent": "icons/painted/transparent/43-silver-bell-without-clapper.png"
       }
     },
     {
@@ -169,10 +130,6 @@
       "icon_check": {
         "status": "ok",
         "note": "Гномий фонарь с механической канарейкой внутри (видны шестерёнки и открытый клюв). Соответствует описанию."
-      },
-      "files": {
-        "icon": "icons/painted/44-gnomish-canary-lamp.png",
-        "transparent": "icons/painted/transparent/44-gnomish-canary-lamp.png"
       }
     }
   ]

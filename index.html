@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>D&D безделушки — иконки 256×256</title>
+<title>D&D Trinkets — иконки 256×256</title>
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
   body { margin: 0; padding: 44px 34px 80px; background: #14161a; color: #e9eaec;
          font: 15px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif; }
-  h1 { margin: 0 0 8px; font-size: 28px; }
-  p.sub { margin: 0 0 30px; color: #949aa6; max-width: 90ch; }
+  h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: .3px; }
+  p.sub { margin: 0 0 8px; color: #949aa6; max-width: 100ch; }
+  p.sub.small { font-size: 13px; margin-bottom: 30px; }
   p.sub code, .meta { font-family: ui-monospace, Menlo, Consolas, monospace; }
   p.sub code { color: #c7ccd6; }
   .grid { display: grid; gap: 26px; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); }
@@ -20,16 +21,21 @@
   .preview img { display: block; width: 100%; height: auto; }
   .preview img.small { position: absolute; right: 12px; bottom: 12px; width: 64px;
                         height: 64px; border-radius: 6px; border: 1px solid #2c3037; }
-  figcaption { display: flex; flex-direction: column; gap: 2px; padding: 12px 2px 0; }
+  figcaption { display: flex; flex-direction: column; gap: 3px; padding: 12px 2px 0; }
   .name { font-weight: 600; }
+  .src { color: #a9b0bd; font-size: 13px; }
   .meta { color: #8d94a1; font-size: 12.5px; }
 </style>
 </head>
 <body>
-  <h1>D&amp;D безделушки — иконки 256×256</h1>
-  <p class="sub">Коллекция в едином стиле «ручная живопись» (11 предметов из таблицы d100).
-  Снизу справа — тот же файл в 64&nbsp;px для проверки читаемости, версии с прозрачным фоном лежат
-  в <code>icons/painted/transparent/</code>.</p>
+  <h1>D&amp;D Trinkets — иконки 256×256</h1>
+  <p class="sub">Коллекция в едином стиле «ручная живопись»: 11 безделушек из таблицы d100.
+  Названия и описания — официальные: английский текст из Player's Handbook (Wizards of the Coast),
+  русский — из перевода Hobby Games. Картинка каждого предмета сверена с описанием
+  (пометка «сверено, картинка поправлена» = на иконке убраны детали, которых в описании нет).</p>
+  <p class="sub small">Файлы: <code>icons/painted/&lt;id&gt;-&lt;slug&gt;.png</code> — фон коллекции;
+  <code>icons/painted/transparent/</code> — прозрачный фон; <code>icons/painted/metadata.csv</code> — таблица описаний;
+  <code>data/trinkets.json</code> — источник данных.</p>
   <div class="grid">
       <figure class="card">
         <div class="preview">
@@ -38,17 +44,19 @@
         </div>
         <figcaption>
           <span class="name">Мумифицированная рука гоблина</span>
-          <span class="meta">icons/painted/01-mummified-goblin-hand.png · d100: 01</span>
+          <span class="src">A mummified goblin hand</span>
+          <span class="meta">d100: 01 · icons/painted/01-mummified-goblin-hand.png</span>
         </figcaption>
       </figure>
       <figure class="card">
         <div class="preview">
-          <img src="icons/painted/02-moonlight-crystal.png" alt="Кристалл, светящийся в лунном свете">
+          <img src="icons/painted/02-moonlight-crystal.png" alt="Кусочек кристалла, слабо светящийся в лунном свете">
           <img class="small" src="icons/painted/02-moonlight-crystal.png" alt="" width="64" height="64">
         </div>
         <figcaption>
-          <span class="name">Кристалл, светящийся в лунном свете</span>
-          <span class="meta">icons/painted/02-moonlight-crystal.png · d100: 02</span>
+          <span class="name">Кусочек кристалла, слабо светящийся в лунном свете</span>
+          <span class="src">A piece of crystal that faintly glows in the moonlight</span>
+          <span class="meta">d100: 02 · icons/painted/02-moonlight-crystal.png · сверено, картинка поправлена</span>
         </figcaption>
       </figure>
       <figure class="card">
@@ -58,17 +66,19 @@
         </div>
         <figcaption>
           <span class="name">Старая стеклянная шахматная фигура</span>
-          <span class="meta">icons/painted/06-glass-chess-piece.png · d100: 06</span>
+          <span class="src">An old chess piece made from glass</span>
+          <span class="meta">d100: 06 · icons/painted/06-glass-chess-piece.png</span>
         </figcaption>
       </figure>
       <figure class="card">
         <div class="preview">
-          <img src="icons/painted/07-skull-knucklebones.png" alt="Кости-«шестёрки» с черепом">
+          <img src="icons/painted/07-skull-knucklebones.png" alt="Пара игральных костей, у обеих вместо шестёрок нарисованы черепа">
           <img class="small" src="icons/painted/07-skull-knucklebones.png" alt="" width="64" height="64">
         </div>
         <figcaption>
-          <span class="name">Кости-«шестёрки» с черепом</span>
-          <span class="meta">icons/painted/07-skull-knucklebones.png · d100: 07</span>
+          <span class="name">Пара игральных костей, у обеих вместо шестёрок нарисованы черепа</span>
+          <span class="src">A pair of knucklebone dice, each with a skull symbol on the side that would normally show six pips</span>
+          <span class="meta">d100: 07 · icons/painted/07-skull-knucklebones.png</span>
         </figcaption>
       </figure>
       <figure class="card">
@@ -78,17 +88,19 @@
         </div>
         <figcaption>
           <span class="name">Зуб неизвестного зверя</span>
-          <span class="meta">icons/painted/13-beast-tooth.png · d100: 13</span>
+          <span class="src">A tooth from an unknown beast</span>
+          <span class="meta">d100: 13 · icons/painted/13-beast-tooth.png</span>
         </figcaption>
       </figure>
       <figure class="card">
         <div class="preview">
-          <img src="icons/painted/14-dragon-scale.png" alt="Огромная чешуйка, возможно драконья">
+          <img src="icons/painted/14-dragon-scale.png" alt="Огромная чешуйка, возможно, драконья">
           <img class="small" src="icons/painted/14-dragon-scale.png" alt="" width="64" height="64">
         </div>
         <figcaption>
-          <span class="name">Огромная чешуйка, возможно драконья</span>
-          <span class="meta">icons/painted/14-dragon-scale.png · d100: 14</span>
+          <span class="name">Огромная чешуйка, возможно, драконья</span>
+          <span class="src">An enormous scale, perhaps from a dragon</span>
+          <span class="meta">d100: 14 · icons/painted/14-dragon-scale.png</span>
         </figcaption>
       </figure>
       <figure class="card">
@@ -98,47 +110,52 @@
         </div>
         <figcaption>
           <span class="name">Ярко-зелёное перо</span>
-          <span class="meta">icons/painted/15-green-feather.png · d100: 15</span>
+          <span class="src">A bright green feather</span>
+          <span class="meta">d100: 15 · icons/painted/15-green-feather.png</span>
         </figcaption>
       </figure>
       <figure class="card">
         <div class="preview">
-          <img src="icons/painted/17-smoke-orb.png" alt="Стеклянный шар с движущимся дымом">
+          <img src="icons/painted/17-smoke-orb.png" alt="Стеклянная сфера, заполненная дымом">
           <img class="small" src="icons/painted/17-smoke-orb.png" alt="" width="64" height="64">
         </div>
         <figcaption>
-          <span class="name">Стеклянный шар с движущимся дымом</span>
-          <span class="meta">icons/painted/17-smoke-orb.png · d100: 17</span>
+          <span class="name">Стеклянная сфера, заполненная дымом</span>
+          <span class="src">A glass orb filled with moving smoke</span>
+          <span class="meta">d100: 17 · icons/painted/17-smoke-orb.png · сверено, картинка поправлена</span>
         </figcaption>
       </figure>
       <figure class="card">
         <div class="preview">
-          <img src="icons/painted/23-rune-etched-brass-orb.png" alt="Латунная сфера с рунами">
+          <img src="icons/painted/23-rune-etched-brass-orb.png" alt="Латунная сфера, покрытая странными рунами">
           <img class="small" src="icons/painted/23-rune-etched-brass-orb.png" alt="" width="64" height="64">
         </div>
         <figcaption>
-          <span class="name">Латунная сфера с рунами</span>
-          <span class="meta">icons/painted/23-rune-etched-brass-orb.png · d100: 23</span>
+          <span class="name">Латунная сфера, покрытая странными рунами</span>
+          <span class="src">A brass orb etched with strange runes</span>
+          <span class="meta">d100: 23 · icons/painted/23-rune-etched-brass-orb.png · сверено, картинка поправлена</span>
         </figcaption>
       </figure>
       <figure class="card">
         <div class="preview">
-          <img src="icons/painted/43-silver-bell-without-clapper.png" alt="Серебряный колокольчик без язычка">
+          <img src="icons/painted/43-silver-bell-without-clapper.png" alt="Крохотный серебряный колокольчик без язычка">
           <img class="small" src="icons/painted/43-silver-bell-without-clapper.png" alt="" width="64" height="64">
         </div>
         <figcaption>
-          <span class="name">Серебряный колокольчик без язычка</span>
-          <span class="meta">icons/painted/43-silver-bell-without-clapper.png · d100: 43</span>
+          <span class="name">Крохотный серебряный колокольчик без язычка</span>
+          <span class="src">A tiny silver bell without a clapper</span>
+          <span class="meta">d100: 43 · icons/painted/43-silver-bell-without-clapper.png</span>
         </figcaption>
       </figure>
       <figure class="card">
         <div class="preview">
-          <img src="icons/painted/44-gnomish-canary-lamp.png" alt="Механический канарейка в гномьем фонаре">
+          <img src="icons/painted/44-gnomish-canary-lamp.png" alt="Механическая канарейка в гномьей лампе">
           <img class="small" src="icons/painted/44-gnomish-canary-lamp.png" alt="" width="64" height="64">
         </div>
         <figcaption>
-          <span class="name">Механический канарейка в гномьем фонаре</span>
-          <span class="meta">icons/painted/44-gnomish-canary-lamp.png · d100: 44</span>
+          <span class="name">Механическая канарейка в гномьей лампе</span>
+          <span class="src">A mechanical canary inside a gnomish lamp</span>
+          <span class="meta">d100: 44 · icons/painted/44-gnomish-canary-lamp.png</span>
         </figcaption>
       </figure>
   </div>
