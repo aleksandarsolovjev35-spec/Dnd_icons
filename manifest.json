@@ -1,6 +1,5 @@
 [
   {
-    "style": "painted",
     "id": "01",
     "d100": 1,
     "slug": "mummified-goblin-hand",
@@ -13,7 +12,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "02",
     "d100": 2,
     "slug": "moonlight-crystal",
@@ -26,7 +24,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "06",
     "d100": 6,
     "slug": "glass-chess-piece",
@@ -39,7 +36,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "07",
     "d100": 7,
     "slug": "skull-knucklebones",
@@ -52,7 +48,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "13",
     "d100": 13,
     "slug": "beast-tooth",
@@ -65,7 +60,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "14",
     "d100": 14,
     "slug": "dragon-scale",
@@ -78,7 +72,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "15",
     "d100": 15,
     "slug": "green-feather",
@@ -91,7 +84,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "17",
     "d100": 17,
     "slug": "smoke-orb",
@@ -104,7 +96,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "23",
     "d100": 23,
     "slug": "rune-etched-brass-orb",
@@ -117,7 +108,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "43",
     "d100": 43,
     "slug": "silver-bell-without-clapper",
@@ -130,7 +120,6 @@
     ]
   },
   {
-    "style": "painted",
     "id": "44",
     "d100": 44,
     "slug": "gnomish-canary-lamp",
