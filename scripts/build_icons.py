@@ -48,11 +48,10 @@ BG: tuple[int, int, int] = tuple(
 THR = 0.035         # допуск «это фон» при вырезании
 FEATHER = 0.6       # сглаживание края маски
 
-GLOW_GAIN = 1.14    # насколько светлее фон за предметом
-GLOW_FALLOFF = 1.7  # насколько быстро гаснет подсветка к краям
-SHADOW_ALPHA = 0.42 # плотность тени под предметом
-SHADOW_BLUR = 9
-SHADOW_DROP = 9
+BCK = DATA["icons"]["background"]          # градиент фона плитки
+SHADOW_ALPHA = 0.55 # плотность контактной тени под предметом
+SHADOW_BLUR = 10
+SHADOW_DROP = 8
 TILE_RADIUS = 12    # скругление плиток в превью
 
 STATUS_COLOUR = {"ok": (110, 190, 130), "fixed": (230, 180, 90), "todo": (220, 110, 110)}
@@ -91,6 +90,9 @@ def cut_out(img: Image.Image, thr: float, feather: float) -> Image.Image:
     dist = np.abs(arr[:, :, :3] - background_colour(arr)).sum(axis=2) / 3.0
 
     mask = ndimage.binary_fill_holes(largest_component(dist > thr * 255))
+    # убираем 2 px по краю: там пиксели смешаны с прежним фоном и на чёрном
+    # фоне дают светлую кайму
+    mask = ndimage.binary_erosion(mask, iterations=2)
     alpha = Image.fromarray(np.where(mask, 255, 0).astype(np.uint8), "L")
     if feather:
         alpha = alpha.filter(ImageFilter.GaussianBlur(feather))
@@ -111,13 +113,17 @@ def scale_object(img: Image.Image, box: int = OBJECT_BOX) -> Image.Image:
 
 
 # --------------------------------------------------------- фон и плитка ----
-def backdrop(size: int, bg: tuple[int, int, int] = BG) -> Image.Image:
-    """Фон плитки: мягкая подсветка в центре, затемнение к краям."""
+def backdrop(size: int) -> Image.Image:
+    """Фон плитки: красивый градиент на чёрном — светлее в центре, чернота к краям."""
     y, x = np.mgrid[0:size, 0:size]
     c = (size - 1) / 2
     r = np.sqrt(((x - c) / c) ** 2 + ((y - c) / c) ** 2)
-    k = np.clip(GLOW_GAIN - (GLOW_GAIN - 0.74) * (r / 1.15) ** GLOW_FALLOFF, 0.74, GLOW_GAIN)
-    base = np.array(bg, dtype=np.float32)[None, None, :] * k[:, :, None]
+    # лёгкий вертикальный сдвиг: центр подсветки чуть выше середины
+    r = np.sqrt(r ** 2 + BCK["bias"] * ((y - c) / c))
+    k = np.clip(1.0 - (r / 1.35) ** BCK["falloff"], 0.0, 1.0)
+    centre = np.array(BCK["center"], np.float32)
+    edge = np.array(BCK["edge"], np.float32)
+    base = edge[None, None, :] + (centre - edge)[None, None, :] * k[:, :, None]
     return Image.fromarray(np.clip(base, 0, 255).astype(np.uint8), "RGB")
 
 
@@ -127,7 +133,7 @@ def compose(img: Image.Image, size: int = CANVAS, bg: tuple[int, int, int] | Non
     canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     pos = ((size - img.width) // 2, (size - img.height) // 2)
     if bg:
-        base = backdrop(size, bg)
+        base = backdrop(size)
         if shadow:
             # силуэт предмета целиком на холсте → размытие и сдвиг вниз
             silhouette = Image.new("L", (size, size), 0)
@@ -176,7 +182,7 @@ def rounded(icon: Image.Image, radius: int = TILE_RADIUS) -> Image.Image:
     ImageDraw.Draw(mask).rounded_rectangle((0, 0, s * 4 - 1, s * 4 - 1), radius=r * 4, fill=255)
     out = icon.copy()
     out.putalpha(mask.resize((s, s), Image.LANCZOS))
-    ImageDraw.Draw(out).rounded_rectangle((0, 0, s - 1, s - 1), radius=r, outline=(255, 255, 255, 26), width=1)
+    ImageDraw.Draw(out).rounded_rectangle((0, 0, s - 1, s - 1), radius=r, outline=(255, 255, 255, 30), width=1)
     return out
 
 
